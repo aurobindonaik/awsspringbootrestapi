@@ -19,7 +19,7 @@ phases:
       - echo Build started on `date`
       - ./mvnw clean package
       - echo Building the Docker image...
-      - docker build -t $REPOSITORY_URI:latest .
+      - DOCKER_BUILDKIT=1 docker build -t $REPOSITORY_URI:latest .
       - docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$IMAGE_TAG
 
   post_build:
