@@ -43,4 +43,4 @@ reports:
     files:
       - 'TEST-uk.co.aqubesolutions.awsspringbootrestapi.AwsspringbootrestapiApplicationTests.xml'
     #discard-paths: false #do not remove file paths from test result files
-    base-directory: './target/surfire-reports'
+    base-directory: './target/surefire-reports'
